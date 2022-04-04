@@ -26,10 +26,11 @@ public class Hook : MonoBehaviour
     public void ActivateHook(bool activate)
     {
         _isHookActive = activate;
+        _spriteMask.enabled = true;
         if (_isHookActive)
         {
             _spriteRenderer.enabled = true;
-            _spriteMask.enabled = false;
+            //_spriteMask.enabled = false;
             _isHookActive = false;
             _collider2d.enabled = true; //
             //StartCoroutine(_hookDelayCoroutine);
@@ -38,7 +39,7 @@ public class Hook : MonoBehaviour
         {
             _spriteRenderer.enabled = false;
             _collider2d.enabled = false;
-            _spriteMask.enabled = true;
+            //_spriteMask.enabled = true;
             //StopCoroutine(_hookDelayCoroutine);
         }
     }
