@@ -47,10 +47,10 @@ TagManager:
   - name: Actor
     uniqueID: 2345576929
     locked: 0
-  - name: Water
+  - name: WaterBackground
     uniqueID: 522772877
     locked: 0
-  - name: Fish
+  - name: UnderwaterObjects
     uniqueID: 2524779759
     locked: 0
   - name: Default
